@@ -5,16 +5,18 @@
       <div class="pw_input">
         <input type="number" class="pw_length" value="16" placeholder="Passwortlänge">
       </div>
-      <div class="checkbox_buchstaben">
-        <input type="checkbox" id="lowercase" checked value="on"><span class="text"> Kleinbuchstaben</span>
-        <input type="checkbox" id="upperrcase" checked value="on"><span class="text"> Großbuchstaben</span>
-        <input type="checkbox" id="umlauts" checked value="on"><span class="text"> Umlaute</span>
-      </div>
+                                            <div class="checkboxen">
+                                              <div class="checkbox_buchstaben">
+                                                <input type="checkbox" class="check" id="lowercase" checked value="on"><span class="text"> Kleinbuchstaben</span>
+                                                <input type="checkbox" class="check" id="upperrcase" checked value="on"><span class="text"> Großbuchstaben</span>
+                                                <input type="checkbox" class="check" id="umlauts" checked value="on"><span class="text"> Umlaute</span>
+                                              </div>
 
-      <div class="checkbox_zahlen">
-        <input type="checkbox" id="numbers" checked value="on"><span class="text"> Nummern</span>
-        <input type="checkbox" id="special" checked value="on"><span class="text"> Sonderzeichen</span>
-      </div>
+                                              <div class="checkbox_zahlen">
+                                                <input type="checkbox" class="check" id="numbers" checked value="on"><span class="text"> Nummern</span>
+                                                <input type="checkbox" class="check" id="special" checked value="on"><span class="text"> Sonderzeichen</span>
+                                              </div>
+                                            </div>
 
     </div>
   </section>
@@ -31,9 +33,33 @@ export default {
 <style>
 .title {}
 
-.ui {}
+.pw_length {
+border-radius: 5px;
+width: 160px;
+}
 
-.checkbox_buchstaben {}
+.text {
+margin-bottom: 10px;
+}
 
-.checkbox_zahlen {}
+.checkboxen {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.ui {
+  display: flex;
+  flex-direction: column
+}
+
+.checkbox_buchstaben {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox_zahlen {
+  display: flex;
+  flex-direction: column;
+}
 </style>
