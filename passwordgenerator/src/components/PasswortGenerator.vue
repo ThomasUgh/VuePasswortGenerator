@@ -7,8 +7,7 @@
             type="number"
             class="pw_length"
             value="16"
-            placeholder="Passwortlänge"
-          />
+                placeholder="Passwortlänge"/>
         </div>
         <div class="checkboxen">
           <div class="checkbox_buchstaben">
@@ -51,6 +50,7 @@
               value="on"
             /><span class="text"> Sonderzeichen</span>
           </div>
+          
         </div>
     </div>
   </section>
@@ -61,6 +61,11 @@ export default {
   name: "HelloWorld",
   methods: {},
 };
+//Passwort stärken Check
+//https://blog.logrocket.com/create-password-strength-checker-vue/
+//https://www.npmjs.com/package/vue-password-strength-meter
+//https://github.com/redsquirrelstudio/vue-password-checker
+//
 </script>
 
 <style>
