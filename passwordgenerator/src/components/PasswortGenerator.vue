@@ -19,3 +19,21 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  methods: {
+  },
+}
+</script>
+
+<style>
+.title {}
+
+.ui {}
+
+.checkbox_buchstaben {}
+
+.checkbox_zahlen {}
+</style>
