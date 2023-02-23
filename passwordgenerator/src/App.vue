@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+          <passswordgenerator/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import passswordgenerator from './components/PasswortGenerator.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    passswordgenerator
   }
 }
 </script>
