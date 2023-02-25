@@ -56,7 +56,7 @@
           placeholder="Passwort"
           readonly
         />
-        <span class="copy" @click="copyToClipboard">📋</span>
+        <span class="copy" @click="copy">📋</span>
       </div>
       <div>
         <input
@@ -143,9 +143,6 @@ export default {
   background-color: transparent;
   color: #0096ff;
   cursor: pointer;
-}
-
-.title {
 }
 
 .output {
