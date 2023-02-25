@@ -73,7 +73,17 @@
 <script>
 export default {
   name: "HelloWorld",
-  methods: {},
+  data() {
+    return {
+      passwordLength: 16, 
+      includeUppercase: true,
+      includeLowercase: true,
+      includeSpecialChars: true,
+      includeUmlauts: true,
+      includeNumbers: true,
+      password: "",
+    };
+  },
 };
 //Passwort stärken Check
 //https://blog.logrocket.com/create-password-strength-checker-vue/
