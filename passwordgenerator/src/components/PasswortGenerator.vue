@@ -123,6 +123,18 @@ export default {
 </script>
 
 <style>
+.passwordgenerator {
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.pw_input {
+  display: flex;
+  justify-content: center
+}
+
 .copy {
   cursor: pointer;
   margin-left: 5px;
@@ -131,7 +143,7 @@ export default {
 .create_password {
   width: 225px;
   border-radius: 15px;
-  margin-top: 15px;
+  margin-top: 16px;
   display: inline-block;
   border: 1px solid #0096ff;
   background-color: #0096ff;
