@@ -47,6 +47,25 @@
             checked
           /><label class="text"> Sonderzeichen</label>
         </div>
+      </div>
+      <div>
+        <input
+          type="text"
+          class="output"
+          :value="password"
+          placeholder="Passwort"
+          readonly
+        />
+        <span class="copy" @click="copyToClipboard">📋</span>
+      </div>
+      <div>
+        <input
+        @click="generatePassword"
+          type="button"
+          class="create_password"
+          value="Passwort erstellen"
+        />
+      </div>
     </div>
   </section>
 </template>
