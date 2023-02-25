@@ -3,6 +3,12 @@
     <h1 class="title">Passwort Generator V1</h1>
     <div class="ui">
       <div class="pw_input">
+        <input
+          type="number"
+          class="pw_length"
+          v-model.number="passwordLength" min="6" max="99"
+          placeholder="Passwortlänge"
+        />
           <input
             type="number"
             class="pw_length"
