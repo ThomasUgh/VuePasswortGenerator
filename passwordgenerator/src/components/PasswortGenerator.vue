@@ -123,6 +123,27 @@ export default {
 </script>
 
 <style>
+.copy {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.create_password {
+  width: 225px;
+  border-radius: 15px;
+  margin-top: 15px;
+  display: inline-block;
+  border: 1px solid #0096ff;
+  background-color: #0096ff;
+  color: #ffffff;
+  padding: 8px 16px;
+  transition: background-color 0.4s, color 0.4s;
+}
+.create_password:hover {
+  background-color: transparent;
+  color: #0096ff;
+  cursor: pointer;
+}
 .title {
 }
 
