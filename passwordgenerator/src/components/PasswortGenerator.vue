@@ -84,6 +84,36 @@ export default {
       password: "",
     };
   },
+  methods: {
+    generatePassword() {
+      const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+      const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      const specialChars = "!§$%&/()=?+#-.,;:_";
+      const umlauts = "äöüÄÖÜß";
+      const numberChars = '0123456789';
+
+      let allowedChars = "";
+      if (this.includeUppercase) allowedChars += uppercaseChars;
+      if (this.includeLowercase) allowedChars += lowercaseChars;
+      if (this.includeSpecialChars) allowedChars += specialChars;
+      if (this.includeUmlauts) allowedChars += umlauts;
+      if (this.includeNumbers) allowedChars += numberChars;
+
+      let password = "";
+      for (let i = 0; i < this.passwordLength; i++) {
+        const randomChar = allowedChars.charAt(
+          Math.floor(Math.random() * allowedChars.length)
+        );
+        password += randomChar;
+      }
+      this.password = password;
+    },
+    copy() {
+      const outputField = document.querySelector('input[type="text"]');
+      outputField.select();
+      document.execCommand('copy');
+    }
+  },
 };
 //Passwort stärken Check
 //https://blog.logrocket.com/create-password-strength-checker-vue/
