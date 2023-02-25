@@ -144,11 +144,23 @@ export default {
   color: #0096ff;
   cursor: pointer;
 }
+
 .title {
+}
+
+.output {
+padding: 8px;
+border-radius: 10px;
+width: 165px;
+transition: width .5s ease-in-out;
+}
+.output:hover {
+width: 275px;
 }
 
 .pw_length {
   border-radius: 5px;
+  padding: 5px;
   width: 160px;
 }
 
