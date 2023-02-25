@@ -9,54 +9,43 @@
           v-model.number="passwordLength" min="6" max="99"
           placeholder="Passwortlänge"
         />
+      </div>
+      <div class="checkboxen">
+        <div class="checkbox_buchstaben">
           <input
-            type="number"
-            class="pw_length"
-            value="16"
-                placeholder="Passwortlänge"/>
+            type="checkbox"
+            class="check"
+            v-model="includeLowercase"
+            checked
+          /><label class="text"> Kleinbuchstaben</label>
+          <input
+            type="checkbox"
+            class="check"
+            v-model="includeUppercase"
+            checked
+            value="on"
+          /><label class="text"> Großbuchstaben</label>
+          <input
+            type="checkbox"
+            class="check"
+            v-model="includeUmlauts"
+            checked
+          /><label class="text"> Umlaute</label>
         </div>
-        <div class="checkboxen">
-          <div class="checkbox_buchstaben">
-            <input
-              type="checkbox"
-              class="check"
-              id="lowercase"
-              checked
-              value="on"
-            /><span class="text"> Kleinbuchstaben</span>
-            <input
-              type="checkbox"
-              class="check"
-              id="upperrcase"
-              checked
-              value="on"
-            /><span class="text"> Großbuchstaben</span>
-            <input
-              type="checkbox"
-              class="check"
-              id="umlauts"
-              checked
-              value="on"
-            /><span class="text"> Umlaute</span>
-          </div>
 
-          <div class="checkbox_zahlen">
-            <input
-              type="checkbox"
-              class="check"
-              id="numbers"
-              checked
-              value="on"
-            /><span class="text"> Nummern</span>
-            <input
-              type="checkbox"
-              class="check"
-              id="special"
-              checked
-              value="on"
-            /><span class="text"> Sonderzeichen</span>
-          </div>
-          
+        <div class="checkbox_zahlen">
+          <input
+            type="checkbox"
+            class="check"
+            v-model="includeNumbers"
+            checked
+          /><label class="text"> Nummern</label>
+          <input
+            type="checkbox"
+            class="check"
+            v-model="includeSpecials"
+            checked
+          /><label class="text"> Sonderzeichen</label>
         </div>
     </div>
   </section>
