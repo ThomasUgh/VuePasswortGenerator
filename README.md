@@ -8,4 +8,5 @@
 - Mehr Optionen 📑
 - größere Grafische Oberfläche 🧾
 - Sonstige Spielereien mit en/codierung... 🔐 
+- Funktion auf praktische Entschlüsselung des Passwortes
 </i>
